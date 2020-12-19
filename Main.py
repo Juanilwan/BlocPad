@@ -75,14 +75,10 @@ def tipo_letra():
     
     romanButton = tk.Button(ventana, text="Times New Roman", bg="green", fg="white", font=("Arial", 10), width="20", command= lambda: cambio("Times New Roman"))
     romanButton.place(x=167, y=100)
-
-
-def finish():
-    root.destroy()
         
 def closeVerify():
    if mb.askyesno(message="¿Desea salir? Perderá los datos que no haya guardado.", title="Salir", default="no"):
-       finish()
+       root.destroy()
    else:
        pass
 
